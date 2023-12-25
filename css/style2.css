@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+
+/* EVERYTHING HAPPY */
+
+#happy-h1 {
+	display: none;
+}
+
+#happy-images {
+	display: none;
+}
+
+#happy-quote {
+	display: none;
+}
+
+#happy-switchbutton {
+	display: none;
+}
+
+#music-button {
+	display: none;
+}
+
+/* THE WHOLE CODE */
+
+body {
+	background-color: #000000;
+	background-repeat: no-repeat;
+	background-size: cover;
+	backdrop-filter: grayscale(100%);
+}
+
+h1 {
+	font-family: 'Zeyada', sans-serif;
+	font-size: 62px;
+	text-align: center;
+	color: rgb(134, 1, 1);
+}
+
+.sad-quote {
+	color: white;
+	text-align: center;
+	font-family: "Zeyada", sans-serif;
+	font-size: 48px;
+	padding: 10px;
+}
+
+.sad-quote span {
+	color: rgb(134, 1, 1);
+}
+
+#image-container {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+#sad-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.circular-square {
+	filter: grayscale(100%);
+	border-radius: 60%;
+	width: 50%;
+	height: 50%;
+	z-index: 1;
+}
+
+.container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.smaller-circular-square, .smaller-circular-square2, .smaller-circular-square3, .smaller-circular-square4{
+	padding: 0.5em;
+}
+
+.smaller-circular-square{
+	position: absolute;
+	border-radius: 50%;
+	height: 40%;
+	filter: grayscale(100%);
+}
+
+.smaller-circular-square2{
+	position: absolute;
+	border-radius: 50%;
+	height: 45%;
+	filter: grayscale(100%);
+}
+
+.smaller-circular-square3 {
+	position: absolute;
+	border-radius: 50%;
+	height: 50%;
+	filter: grayscale(100%);
+}
+
+.smaller-circular-square4{
+	position: absolute;
+	border-radius: 50%;
+	height: 50%;
+	filter: grayscale(100%);
+}
+
+.smaller-circular-square {
+	top: 0;
+	left: 0;
+}
+
+.smaller-circular-square2 {
+	top: 0;
+	right: 0;
+}
+
+.smaller-circular-square3 {
+	bottom: 0;
+	left: 0;
+}
+
+.smaller-circular-square4 {
+	bottom: 0;
+	right: 0;
+
+}
+
+@keyframes hoverUpDown {
+	0% {
+		transform: translateX(-10px);
+	}
+	50% {
+		transform: translateY(-20px);
+	}
+	100% {
+		transform: translateX(-10px);
+	}
+}
+
+.smaller-circular-square{
+	animation: hoverUpDown 2s infinite;
+
+}
+
+.smaller-circular-square2{
+	animation: hoverUpDown 2.5s infinite;
+
+}
+
+.smaller-circular-square3{
+	animation: hoverUpDown 1.5s infinite;
+
+}
+
+.smaller-circular-square4{
+	animation: hoverUpDown 2.2s infinite;
+
+}
+
+@media screen and (max-width: 800px) {
+	.column {
+		flex: 50%;
+		max-width: 50%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.column {
+		flex: 100%;
+		max-width: 100%;
+	}
+}
+
+.center-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 20vh;
+}
+
+#sad-audio {
+	width: 200px;
+	height: 70px;
+	border-width: 4px;
+	border-radius: 35px;
+	font-size: 25px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#volume-control-sad {
+	margin-top: 10px;
+}
+
+#sad-switchbutton {
+	margin-top: 2em;
+	margin-bottom: 2em;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 200%;
+	border-top: 3px dotted rgb(0, 0, 0);
+	border-bottom: 3px dotted rgb(0, 0, 0);
+	padding: 2em;
+	background: #ffffff;
+	font-style: italic;
+	font-family: "Zeyada", sans-serif;
+	color: rgb(134, 1, 1);
+	box-shadow: 8px 8px 8px #000000;
+	transition: transform 0.3s ease-in-out;
+}
+
+#sad-switchbutton:hover {
+	transform: translateY(5px);
+}

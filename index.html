@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link href="css/style1.css" id="stylesheet" rel="stylesheet">
+	<script src="scripts/switch.js"></script>
+
+
+
+	<title>Time: Assignment 6</title>
+</head>
+
+<body>
+
+	<h1 id="happy-h1">THE TIME OF YOUR LIFE</h1>
+
+
+	<h1 id="sad-h1">THE TIME OF YOUR LIFE?</h1>
+
+
+	<section>
+		
+		<!-- HAPPY VIDEOS --> 
+
+		<!-- Få bildene og videoene til å være mindre organiserte! -->
+
+		<!-- Få områder på bilder til å være knapper/"clickable"-->
+
+		<!-- Tanker som kommer fram og forsvinner. Bruk CSS -->
+
+		<!-- Ikke rediger bilder med CSS. Crop osv før du legger bildene inn.-->
+
+		<!-- Fortell en historie. Ikke bruk så mye CSS som mulig-->
+
+		<!-- Gråsvart bakgrunn-->
+
+		<!-- Flytte på tankene i andre stil-->
+
+		<!-- Hierarkiproblem med bildet?-->
+
+		<!-- Et bilde større enn de andre-->
+		
+		<!-- HAPPY IMAGES -->
+
+		<div id="happy-images">
+                  <img alt="A group of friends that are really happy in a hotspring on Iceland" class="fun-images1" src="images/happy-in-hotspring.jpg">
+			<img src="images/bror-og-soster.jpg" alt="" class="fun-images2">
+			<img src="images/endre.jpg" alt="" class="fun-images3">
+			<img src="images/monster-gutta.jpg" alt="" class="fun-images4">
+
+            </div>
+
+		<!-- HAPPY QUOTE -->
+		<div class="container">
+			<blockquote id="happy-quote">
+				"The most important thing is to enjoy your life - to be happy. It's all that
+				matters."
+
+				<p>- Audrey Hepburn</p>
+			</blockquote>
+		</div>
+
+		<!-- SAD TEXT -->
+		<div class="sad-quote">
+			You want to get away from everything. Happiness is just a thought surrounding you. It is the same <span> over </span> and <span> over </span> and <span> over </span> and <span> over </span> and <span> over </span> again...
+		</div>
+
+		<!-- SAD IMAGES -->
+
+		<div id="image-container">
+			<div id="sad-image">
+				<img class= "circular-square" src="images/trist_jente.jpg" alt="A depleted woman, tired of reading about curriculum">
+			</div>
+			
+			<div id="container">
+				<img class="smaller-circular-square" src="images/happy-in-hotspring.jpg" alt="">
+
+				<img class="smaller-circular-square2" src="images/endre.jpg" alt="">
+
+				<img class="smaller-circular-square3" src="images/bror-og-soster.jpg" alt="">
+				
+				<img class="smaller-circular-square4" src="images/monster-gutta.jpg" alt=""> 
+			</div>
+		</div>
+
+		<!-- AUDIO FILES-->
+
+		<div id="music-button">
+			<div class="center-wrapper">
+			  <audio id="audio-crystal" src="audio/Engelwood - Crystal Dolphin (Official Music Video).mp3"></audio>
+			  <button class="music-button" id="happy-audio" onclick="toggleAudio('audio-crystal', 'happy-audio')">Have fun!</button>
+			  <input type="range" id="volume-control-crystal" min="0" max="1" step="0.1" value="1" oninput="setVolume('audio-crystal', 'volume-control-crystal')">
+			</div>
+		    </div>
+		    
+		<div id="sad-music-button">
+			<div class="center-wrapper">
+			  <audio id="audio-sad" src="audio/je te laisserai des mots  patrick watson lyrics with english translations.mp3"></audio>
+			  <button class="music-button" id="sad-audio" onclick="toggleAudio('audio-sad', 'sad-audio')">Get lost with me...</button>
+			  <input type="range" id="volume-control-sad" min="0" max="1" step="0.1" value="1" oninput="setVolume('audio-sad', 'volume-control-sad')">
+			</div>
+		</div>
+		    
+		<script>
+			function toggleAudio(audioId, buttonId) {
+			  const audioElement = document.getElementById(audioId);
+			  const audioButton = document.getElementById(buttonId);
+		    
+			  if (audioElement.paused) {
+			    audioElement.play();
+			    audioButton.textContent = 'Pause';
+			  } else {
+			    audioElement.pause();
+			    audioButton.textContent = 'Play';
+			  }
+			}
+		    
+			function setVolume(audioId, volumeControlId) {
+			  const audioElement = document.getElementById(audioId);
+			  const volumeControl = document.getElementById(volumeControlId);
+			  audioElement.volume = volumeControl.value;
+			}
+		</script>		    
+	</section>
+
+	<button id="happy-switchbutton" onclick="switchCSS('css/style1.css','css/style2.css'); return false;" type="button">
+	<!-- your button text/imagery/content goes here -->
+	Being a student is the best time of your life!
+      <p>Some say...</p>
+	</button> 
+	
+	<button id="sad-switchbutton" onclick="switchCSS('css/style1.css','css/style2.css'); return false;" 
+			type="button">
+	<!-- your button text/imagery/content goes here -->
+	But the party must go on...
+	</button>
+</body>
+</html>

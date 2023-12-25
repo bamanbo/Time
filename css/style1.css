@@ -1,0 +1,172 @@
+@import url('https://fonts.cdnfonts.com/css/disco');
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+/* EVERYTHING SAD */
+
+#sad-h1 {
+	display: none;
+}
+
+#sad-switchbutton {
+	display: none;
+}
+
+#sad-audio {
+	display: none;
+}
+
+#sad-image {
+	display: none;
+}
+
+#container{
+	display: none;
+}
+
+.sad-quote {
+	display: none;
+}
+
+.sad-music-button {
+	display: none;
+}
+
+#volume-control-sad{
+      display: none;
+}
+
+/* THE MAIN CODE */
+
+body {
+	backdrop-filter: blur(5px) grayscale(100%);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url('../images/trist_jente.jpg');
+}
+
+h1 {
+	font-family: "DISCO", sans-serif;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	font-size: 100px;
+}
+
+#happy-images {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80vh;
+	z-index: 1;
+}
+
+.fun-images1, .fun-images2, .fun-images3, .fun-images4 {
+	padding: 2em;
+	height: 550px;
+	transform: rotate(-10deg);
+}
+
+.fun-images1 {
+	z-index: 1;
+}
+
+.fun-images2 {
+	z-index: 2;
+}
+
+.fun-images3 {
+	z-index: 3;
+}
+
+.fun-images4 {
+	z-index: 4;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+blockquote {
+	display: inline-block;
+	text-align: center;
+	font-size: 200%;
+	border-top: 3px dotted rgb(221, 62, 13);
+	border-bottom: 3px dotted rgb(221, 62, 13);
+	padding: 2em;
+	background: #eeeeee;
+	font-style: italic;
+	font-family: "Poppins", sans-serif;
+	box-shadow: 8px 8px 8px #000000;
+}
+
+.center-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 20vh;
+}
+
+.music-button {
+      width: 200px;
+      height: 70px;
+      border-width: 4px;
+      border-radius: 35px;
+      font-size: 25px;
+      font-weight: bold;
+      cursor: pointer;
+}
+
+#happy-audio {
+	width: 200px;
+	height: 70px;
+	border-width: 4px;
+	border-radius: 35px;
+	font-size: 25px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#volume-control {
+	margin-top: 10px;
+}
+
+#happy-switchbutton {
+	margin-top: 2em;
+	margin-bottom: 2em;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 200%;
+	border-top: 3px dotted green;
+	border-bottom: 3px dotted green;
+	padding: 2em;
+	background: #ffffff;
+	font-style: italic;
+	font-family: "DISCO", sans-serif;
+	box-shadow: 8px 8px 8px #cccccc;
+	transition: transform 0.3s ease-in-out;
+	font-weight: 700;
+}
+
+#happy-switchbutton p {
+	visibility: hidden;
+}
+
+#happy-switchbutton:hover {
+	cursor: pointer;
+	background: #555555;
+	border-top: #000000;
+	border-bottom: #000000;
+	box-shadow: 8px 8px 8px #000000;
+	border-top: 3px dotted rgb(0, 0, 0);
+	border-bottom: 3px dotted rgb(0, 0, 0);
+	transform: translateX(5px);
+}
+
+#happy-switchbutton:hover p {
+	visibility: visible;
+	font-family: "Zeyada", sans-serif;
+	color: rgb(88, 0, 0);
+}
